@@ -55,7 +55,7 @@ module.exports = NodeHelper.create({
           self.sendSocketNotification("ERROR", "Error generating QR Code");
         } else {
           Log.log("next-episode, QR Code: ", url);
-          // Send the QR code URL to the frontend so it can be displayed
+
           self.sendSocketNotification("QR_CODE", url);
         }
       });
